@@ -29,7 +29,6 @@ img {
 }
 
 /* 見出し */
-
 .page-title {
   font-size: 5rem;
   font-family: 'Philosopher', serif;
@@ -121,30 +120,21 @@ iframe {
   height: 270px;
   margin-bottom: 40px;
 }
-.news__inner {
+.contents {
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
 }
-
 /* 記事部分 */
-.news__article {
+.article {
   width: 74%;
 }
-.news__post-info {
+.post {
   position: relative;
   padding-top: 4px;
   margin-bottom: 40px;
 }
-.news__post-title {
-  font-family: "Yu Mincho", "YuMincho", serif;
-  font-size: 2rem;
-  font-weight: normal;
-  margin-left: 120px;
-}
-
-/* 日付部分 */
-.news__post-date {
+.post__date {
   background: #0bd;
   border-radius: 50%;
   color: #fff;
@@ -156,7 +146,7 @@ iframe {
   top: 0;
   padding-top: 10px;
 }
-.news__post-year {
+.post__year {
   font-size: 1rem;
   border-top: 1px rgba(255,255,255,.5) solid;
   padding-top: 6px;
@@ -164,37 +154,41 @@ iframe {
   width: 60%;
   margin: 0 auto;
 }
-
-.news__post-category {
+.post__title {
+  font-family: "Yu Mincho", "YuMincho", serif;
+  font-size: 2rem;
+  font-weight: normal;
   margin-left: 120px;
 }
-.news__image {
+.post__category {
+  margin-left: 120px;
+}
+.article__image {
   margin-bottom: 20px;
 }
-.news__text {
+.article__text {
   margin-bottom: 1rem;
 }
-
 /* サイドバー */
-.news__sidebar {
+.sidebar {
   width: 22%;
 }
-.news__sidebar-list {
+.sidebar-list {
   margin-bottom: 60px;
   list-style: none;
 }
-.news__sidebar-item {
-  display: block;
-  padding: 10px;
+.sidebar-list__item {
   border-bottom: 1px #ddd solid;
 }
-.news__sidebar-link {
+.sidebar-list__link {
   color: #432;
+  padding: 10px;
+  display: block;
 }
-.news__sidebar-link:hover {
+.sidebar-list__link a:hover {
   color: #0bd;
 }
-.news__sidebar-text {
+.sidebar__text {
   padding: 12px 10px;
 }
 
@@ -230,9 +224,12 @@ iframe {
   background-image: url(../images/contact-bg.jpg);
   min-height: 100vh;
 }
+.page-title_not-center {
+  text-align: left;
+}
 
 /* フォーム */
-.form__inner {
+.form {
   margin-bottom: 14px;
 }
 .form__label {
@@ -259,7 +256,11 @@ iframe {
   max-width: 480px;
   height: 6rem;
 }
-
+.form__button {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
 
 
 /* フッター
