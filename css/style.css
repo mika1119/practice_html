@@ -185,7 +185,7 @@ iframe {
   padding: 10px;
   display: block;
 }
-.sidebar-list__link a:hover {
+.sidebar-list__link:hover {
   color: #0bd;
 }
 .sidebar__text {
@@ -260,6 +260,38 @@ iframe {
   border: none;
   cursor: pointer;
   line-height: 1;
+}
+/* 店舗情報・地図 */
+.location-wrap {
+  padding: 4% 0;
+}
+.location {
+  display: flex;
+  justify-content: space-between;
+}
+.location__info {
+  width: 22%;
+}
+.location__text {
+  padding: 12px 10px;
+}
+.location__map {
+  width: 74%;
+}
+/* SNS */
+.sns-wrap {
+  background: #FAF7F0;
+  padding: 4% 0;
+}
+.sns {
+  display: flex;
+  justify-content: space-between;
+}
+.page__sub-title_margin-bottom {
+  margin-bottom: 30px;
+}
+.sns-box {
+  width: 30%;
 }
 
 
